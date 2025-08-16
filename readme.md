@@ -6,12 +6,13 @@
 ---
 
 ## 📂 Repository Structure
-- `1.모델소스코드.zip` : MMDetection 기반 산불 탐지 모델 소스 코드 (압축본)
-- `2.학습모델파일.zip` : 학습된 모델 가중치 파일 (`forest_fire.pth`)
-- `wildfire.zip` : Python 3.10 가상환경(venv) 압축본 (필요 패키지 포함)
+- [`1.모델소스코드.zip`](https://drive.google.com/file/d/1P1KGEm729xhpiZaSeFVV0AeDGFlweC_a/view?usp=sharing) : MMDetection 기반 산불 탐지 모델 소스 코드 (압축본)
+- [`2.학습모델파일.zip`](https://drive.google.com/file/d/1_pSd7Gh8DGMqZEKRrANxaS2EdsJtmn28/view?usp=sharing) : 학습된 모델 가중치 파일 (`forest_fire.pth`)
+- [`wildfire.zip`](https://drive.google.com/file/d/1hxoNkZ0pqLI0WgRrAmWWQUp-p10z8P9G/view?usp=sharing) : Python 3.10 가상환경(venv) 압축본 (필요 패키지 포함) 
 - `README.md` : 프로젝트 설명 및 사용 가이드
 
 ---
+
 
 ## 🔥 Wildfire AI Model Usage
 
