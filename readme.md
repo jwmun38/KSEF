@@ -6,9 +6,9 @@
 ---
 
 ## 📂 Repository Structure
-- [`1.모델소스코드.zip`](https://drive.google.com/file/d/1P1KGEm729xhpiZaSeFVV0AeDGFlweC_a/view?usp=sharing) : MMDetection 기반 산불 탐지 모델 소스 코드 (압축본)
-- [`2.학습모델파일.zip`](https://drive.google.com/file/d/1_pSd7Gh8DGMqZEKRrANxaS2EdsJtmn28/view?usp=sharing) : 학습된 모델 가중치 파일 (`forest_fire.pth`)
-- [`wildfire.zip`](https://drive.google.com/file/d/1hxoNkZ0pqLI0WgRrAmWWQUp-p10z8P9G/view?usp=sharing) : Python 3.10 가상환경(venv) 압축본 (필요 패키지 포함) 
+- [`1.모델소스코드.zip`](https://drive.google.com/file/d/1_pSd7Gh8DGMqZEKRrANxaS2EdsJtmn28/view?usp=sharing) : MMDetection 기반 산불 탐지 모델 소스 코드 (압축본)
+- [`2.학습모델파일.zip`](https://drive.google.com/file/d/1hxoNkZ0pqLI0WgRrAmWWQUp-p10z8P9G/view?usp=sharing) : 학습된 모델 가중치 파일 (`forest_fire.pth`)
+- [`wildfire.zip`](https://drive.google.com/file/d/1P1KGEm729xhpiZaSeFVV0AeDGFlweC_a/view?usp=sharing) : Python 3.10 가상환경(venv) 압축본 (필요 패키지 포함) 
 - `README.md` : 프로젝트 설명 및 사용 가이드
 
 ---
@@ -65,7 +65,7 @@ python demo/image_demo.py \
 
 * AI Hub: [지역안전재난(산불) 방재의 고도화를 위한 대규모 인공지능 데이터베이스 구축](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&dataSetSn=71330)
 * OpenMMLab MMDetection: [https://github.com/open-mmlab/mmdetection](https://github.com/open-mmlab/mmdetection)
-* XGBoost: [https://xgboost.readthedocs.io/](https://xgboost.readthedocs.io/)
+* Using soil moisture information to better understand and predict wildfire danger: a review of recent developments and outstanding questions: [https://doi.org/10.1071/WF22056](https://doi.org/10.1071/WF22056)
 <br><br>
 ---
 
