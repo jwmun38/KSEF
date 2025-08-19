@@ -6,10 +6,24 @@
 ---
 
 ## 📂 Repository Structure
+<br>
+
+- `README.md` : 프로젝트 설명 및 사용 가이드
+<br>
+
+### Wildfire AI Model
 - [`1.모델소스코드.zip`](https://drive.google.com/file/d/1_pSd7Gh8DGMqZEKRrANxaS2EdsJtmn28/view?usp=sharing) : MMDetection 기반 산불 탐지 모델 소스 코드 (압축본)
 - [`2.학습모델파일.zip`](https://drive.google.com/file/d/1hxoNkZ0pqLI0WgRrAmWWQUp-p10z8P9G/view?usp=sharing) : 학습된 모델 가중치 파일 (`forest_fire.pth`)
 - [`wildfire.zip`](https://drive.google.com/file/d/1P1KGEm729xhpiZaSeFVV0AeDGFlweC_a/view?usp=sharing) : Python 3.10 가상환경(venv) 압축본 (필요 패키지 포함) 
-- `README.md` : 프로젝트 설명 및 사용 가이드
+
+
+### Soil Moisture Prediction
+- [`KSEF_토양수분예측_모델_Preprocessing.ipynb`](KSEF_토양수분예측_모델_Preprocessing.ipynb) : 데이터 수집 및 전처리 과정  
+- `KSEF_토양수분예측_모델_Modeling.ipynb` : 머신러닝/딥러닝 모델 설계 및 학습 코드  
+- `KSEF_토양수분예측_모델_Evalutation.ipynb` : 모델 성능 평가 및 결과 분석  
+
+
+
 
 ---
 
@@ -53,7 +67,6 @@ python demo/image_demo.py \
 ---
 
 ## 🌱 Soil Moisture Model Development
-
 
 * 공공데이터 기반 기상·토양 데이터를 수집
 * (개발중)
