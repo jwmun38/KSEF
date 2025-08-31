@@ -21,7 +21,7 @@
 - [`KSEF_토양수분예측_모델_Preprocessing.ipynb`](KSEF_토양수분예측_모델_Preprocessing.ipynb) : 데이터 수집 및 전처리 과정  
 - [`KSEF_토양수분예측_모델_Modeling.ipynb`](KSEF_토양수분예측_모델_Modeling.ipynb) : 머신러닝/딥러닝 모델 설계 및 학습 코드  
 - `KSEF_토양수분예측_모델_Evalutation.ipynb` : 모델 성능 평가 및 결과 분석  
-- [`KSEF_데이터`](https://drive.google.com/drive/folders/1RwMc7uRIakQBg2vToZmek-hZ8aPIubFy?usp=sharing) : 기상청, 토양 수분 등 수집 데이터 & 모델 학습 결과 데이터 폴더 
+- [`KSEF_데이터`](https://drive.google.com/file/d/1OvktnQNVleEQtZXYsVc8ZwGYX2cwg2Xg/view?usp=drive_link) : 기상청, 토양 수분 등 수집 데이터 & 모델 학습 결과 데이터 폴더 
 
 
 
