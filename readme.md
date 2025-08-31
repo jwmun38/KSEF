@@ -19,8 +19,9 @@
 
 ### Soil Moisture Prediction
 - [`KSEF_토양수분예측_모델_Preprocessing.ipynb`](KSEF_토양수분예측_모델_Preprocessing.ipynb) : 데이터 수집 및 전처리 과정  
-- `KSEF_토양수분예측_모델_Modeling.ipynb` : 머신러닝/딥러닝 모델 설계 및 학습 코드  
+- [`KSEF_토양수분예측_모델_Modeling.ipynb`](KSEF_토양수분예측_모델_Modeling.ipynb) : 머신러닝/딥러닝 모델 설계 및 학습 코드  
 - `KSEF_토양수분예측_모델_Evalutation.ipynb` : 모델 성능 평가 및 결과 분석  
+- [`KSEF_데이터`](https://drive.google.com/drive/folders/1RwMc7uRIakQBg2vToZmek-hZ8aPIubFy?usp=sharing) : 기상청, 토양 수분 등 수집 데이터 & 모델 학습 결과 데이터 폴더 
 
 
 
@@ -69,7 +70,43 @@ python demo/image_demo.py \
 ## 🌱 Soil Moisture Model Development
 
 * 공공데이터 기반 기상·토양 데이터를 수집
-* (개발중)
+
+* 학습 모델 비교
+  
+| 계열 | 사용 모델 |
+|------|-----------|
+| **선형 계열** | Linear Regression, Ridge, Lasso, ElasticNet |
+| **트리 계열** | RandomForest, GradientBoosting |
+| **부스팅 계열** | XGBoost, LightGBM, CatBoost |
+
+
+* 교차검증 및 평가 지표
+- **교차검증 방식**: `TimeSeriesSplit(n=3)`  
+- **평가지표**: MAE, RMSE, R²  
+- **Baseline**: Persistence(전일값 유지) / 단순 평균 대비 개선율(스킬 스코어)  
+
+* 깊이별 성능 결과
+  
+| 토양 깊이 | MAE | RMSE | R² | 비고 |
+|-----------|------|------|-----|------|
+| **10cm** | 2.72 | 3.37 | 0.75 | 안정적 |
+| **20cm** | 2.99 | 3.71 | 0.81 | 가장 안정적 |
+| **40cm** | 3.55 | 4.50 | 0.55 | 센서 고장·보간 영향 |
+| **60cm** | 2.95 | 4.03 | 0.82 | 최고 성능 |
+| **평균 (target_avg)** | 2.85 | 3.57 | 0.78 | 안정적 |
+
+> 부스팅 계열(XGBoost, LightGBM, CatBoost)이 전반적으로 가장 높은 성능을 보였으며,  
+> 20cm와 60cm 깊이에서 가장 높은 정확도를 보여주었다. 
+
+* 변수 중요도 분석
+- **Permutation Importance & SHAP 분석 결과**  
+  - 기압(PA_MAX, PA_MIN, PA_MAVG) → **최상위 기여 변수**  
+  - 강수량(단기 누적), 바람 평균, 기온, 이슬점온도도 중요한 변수  
+- **Ablation Study**  
+  - 기압 변수를 제외할 경우 성능이 급격히 붕괴  
+  - → 기압이 단순 상관이 아닌 **핵심 예측 인자**임을 확인 / 추가 검증 필요  
+
+
 * 모델 구조 및 분석 과정 :  [토양 수분 예측 프로젝트 문서](https://github.com/jwmun38/KSEF)
 <br><br>
 ---
